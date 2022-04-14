@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="TestNG">
+    <classes>
+      <class name="com.poly.service.testng.LoginServiceTest"/>
+      <class name="com.poly.service.testng.VideoServiceTest"/>
+      <class name="com.poly.service.testng.UserServiceTest"/>
+      <class name="com.poly.service.testng.HistoryServiceTest"/>
+      <class name="com.poly.service.testng.ShareServiceTest"/>
+    </classes>
+  </test>
+  <test thread-count="5" name="TestNGAndSelenium">
+    <classes>
+      <class name="com.poly.service.testng_selenium.LoginTest"/>
+      <class name="com.poly.service.testng_selenium.ChangePassTest"/>
+      <class name="com.poly.service.testng_selenium.RegisterTest"/>
+      <class name="com.poly.service.testng_selenium.UserTest"/>
+      <class name="com.poly.service.testng_selenium.FavoriteTest"/>
+      <class name="com.poly.service.testng_selenium.VideoTest"/>
+      <class name="com.poly.service.testng_selenium.HistoryTest"/>
+    </classes>
+  </test>
+</suite>

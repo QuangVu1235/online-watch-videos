@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TestNGAndSelenium(failed)">
+    <classes>
+      <class name="com.poly.service.testng_selenium.VideoTest">
+        <methods>
+          <include name="init"/>
+          <include name="insertVideo" invocation-numbers="2"/>
+          <include name="setUp"/>
+          <include name="destroy"/>
+          <include name="processLogin"/>
+          <include name="tearDown"/>
+          <include name="updateVideo" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- com.poly.service.testng_selenium.VideoTest -->
+      <class name="com.poly.service.testng_selenium.UserTest">
+        <methods>
+          <include name="insertUser" invocation-numbers="3 4"/>
+          <include name="init"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="processLogin"/>
+          <include name="updateUser" invocation-numbers="3"/>
+          <include name="destroy"/>
+        </methods>
+      </class> <!-- com.poly.service.testng_selenium.UserTest -->
+    </classes>
+  </test> <!-- TestNGAndSelenium(failed) -->
+</suite> <!-- Failed suite [Suite] -->

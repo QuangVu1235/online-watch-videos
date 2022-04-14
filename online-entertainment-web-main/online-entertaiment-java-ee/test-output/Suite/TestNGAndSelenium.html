@@ -1,0 +1,512 @@
+<html>
+<head>
+<title>TestNG:  TestNGAndSelenium</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TestNGAndSelenium</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>40/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Dec 12 21:59:31 ICT 2021</td>
+</tr>
+<tr><td>Total time:</td><td>225 seconds (225750 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.poly.service.testng_selenium.VideoTest.insertVideo()'><b>insertVideo</b><br>Test class: com.poly.service.testng_selenium.VideoTest<br>Parameters: Thêm video với id đã tồn tại, Cấu hình Router cho ứng dụng Angular, Zc1XepIV4-U, Lập trình Front-end với Angular , Thêm mới thất bại!</td>
+<td><div><pre>java.lang.AssertionError: expected [Thêm mới thất bại!] but found [Thêm mới thành công!]
+	at com.poly.service.testng_selenium.VideoTest.insertVideo(VideoTest.java:112)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace954093341", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace954093341'><pre>java.lang.AssertionError: expected [Thêm mới thất bại!] but found [Thêm mới thành công!]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.poly.service.testng_selenium.VideoTest.insertVideo(VideoTest.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>com.poly.service.testng_selenium.VideoTest@790da477</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.VideoTest.updateVideo()'><b>updateVideo</b><br>Test class: com.poly.service.testng_selenium.VideoTest<br>Parameters: Sửa video với dữ liệu trống, Các kỹ thuật thiết kế Test Case, tr8hm-xS33M, , Cập nhật thông tin thất bại!</td>
+<td><div><pre>java.lang.AssertionError: expected [Cập nhật thông tin thất bại!] but found [Video ID không tồn tại!]
+	at com.poly.service.testng_selenium.VideoTest.updateVideo(VideoTest.java:146)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1551106654", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1551106654'><pre>java.lang.AssertionError: expected [Cập nhật thông tin thất bại!] but found [Video ID không tồn tại!]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.poly.service.testng_selenium.VideoTest.updateVideo(VideoTest.java:146)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>com.poly.service.testng_selenium.VideoTest@790da477</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.UserTest.insertUser()'><b>insertUser</b><br>Test class: com.poly.service.testng_selenium.UserTest<br>Parameters: Thêm user với email đã tồn tại, NhuTQ, 123456, Trương Quỳnh Như, khoadhd@gmail.com, user, Thêm mới thất bại!</td>
+<td><div><pre>java.lang.AssertionError: expected [Thêm mới thất bại!] but found [Thêm mới thành công!]
+	at com.poly.service.testng_selenium.UserTest.insertUser(UserTest.java:98)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace330045015", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace330045015'><pre>java.lang.AssertionError: expected [Thêm mới thất bại!] but found [Thêm mới thành công!]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.poly.service.testng_selenium.UserTest.insertUser(UserTest.java:98)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>com.poly.service.testng_selenium.UserTest@38467116</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.UserTest.insertUser()'><b>insertUser</b><br>Test class: com.poly.service.testng_selenium.UserTest<br>Parameters: Thêm user với id đã tồn tại, KhoaDHD, 123456, Trương Quỳnh Như, nhutq@gmail.com, user, Thêm mới thất bại!</td>
+<td><div><pre>java.lang.AssertionError: expected [Thêm mới thất bại!] but found [Thêm mới thành công!]
+	at com.poly.service.testng_selenium.UserTest.insertUser(UserTest.java:98)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1363130483", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1363130483'><pre>java.lang.AssertionError: expected [Thêm mới thất bại!] but found [Thêm mới thành công!]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.poly.service.testng_selenium.UserTest.insertUser(UserTest.java:98)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>com.poly.service.testng_selenium.UserTest@38467116</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.UserTest.updateUser()'><b>updateUser</b><br>Test class: com.poly.service.testng_selenium.UserTest<br>Parameters: Sửa thông tin user với dữ liệu trống, NhuTQ, , , , user, Cập nhật thông tin thất bại!</td>
+<td><div><pre>java.lang.AssertionError: expected [Cập nhật thông tin thất bại!] but found [Cập nhật thông tin thành công!]
+	at com.poly.service.testng_selenium.UserTest.updateUser(UserTest.java:129)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace804574747", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace804574747'><pre>java.lang.AssertionError: expected [Cập nhật thông tin thất bại!] but found [Cập nhật thông tin thành công!]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.poly.service.testng_selenium.UserTest.updateUser(UserTest.java:129)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>com.poly.service.testng_selenium.UserTest@38467116</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.poly.service.testng_selenium.FavoriteTest.deleteFavorite()'><b>deleteFavorite</b><br>Test class: com.poly.service.testng_selenium.FavoriteTest<br>Parameters: Xoá video yêu thích, AEjv3tFncGQ, Xoá video yêu thích thành công</td>
+<td></td>
+<td>1</td>
+<td>com.poly.service.testng_selenium.FavoriteTest@5b7a7f33</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.HistoryTest.deleteHistoty()'><b>deleteHistoty</b><br>Test class: com.poly.service.testng_selenium.HistoryTest<br>Parameters: Xoá video khỏi lịch sử xem, Hi9eQnS7snc, Xoá lịch sử xem thành công</td>
+<td></td>
+<td>1</td>
+<td>com.poly.service.testng_selenium.HistoryTest@5c7933ad</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.HistoryTest.deleteHistoty()'><b>deleteHistoty</b><br>Test class: com.poly.service.testng_selenium.HistoryTest<br>Parameters: Xoá video khỏi lịch sử xem, Zc1XepIV4-U, Xoá lịch sử xem thành công</td>
+<td></td>
+<td>1</td>
+<td>com.poly.service.testng_selenium.HistoryTest@5c7933ad</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.HistoryTest.processLogin()'><b>processLogin</b><br>Test class: com.poly.service.testng_selenium.HistoryTest</td>
+<td></td>
+<td>2</td>
+<td>com.poly.service.testng_selenium.HistoryTest@5c7933ad</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.UserTest.insertUser()'><b>insertUser</b><br>Test class: com.poly.service.testng_selenium.UserTest<br>Parameters: Thêm user, NoPT, 123456, Phạm Thị Nở, nopt@gmail.com, user, Thêm mới thành công!</td>
+<td></td>
+<td>2</td>
+<td>com.poly.service.testng_selenium.UserTest@38467116</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.UserTest.updateUser()'><b>updateUser</b><br>Test class: com.poly.service.testng_selenium.UserTest<br>Parameters: Sửa thông tin user, NhuTQ, 654321, Trương Quỳnh Như, nhutq@gmail.com, user, Cập nhật thông tin thành công!</td>
+<td></td>
+<td>4</td>
+<td>com.poly.service.testng_selenium.UserTest@38467116</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.RegisterTest.processRegister()'><b>processRegister</b><br>Test class: com.poly.service.testng_selenium.RegisterTest<br>Parameters: Đăng ký với dữ liệu trống, , , , , , http://localhost:8080/online-entertaiment-java-ee/register</td>
+<td></td>
+<td>2</td>
+<td>com.poly.service.testng_selenium.RegisterTest@72c8e7b</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.FavoriteTest.deleteFavorite()'><b>deleteFavorite</b><br>Test class: com.poly.service.testng_selenium.FavoriteTest<br>Parameters: Xoá video yêu thích, IChYNrudCWk, Xoá video yêu thích thành công</td>
+<td></td>
+<td>1</td>
+<td>com.poly.service.testng_selenium.FavoriteTest@5b7a7f33</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.HistoryTest.insertHistory()'><b>insertHistory</b><br>Test class: com.poly.service.testng_selenium.HistoryTest<br>Parameters: Thêm video vào lịch sử xem, AEjv3tFncGQ, Thêm lịch sử xem thành công</td>
+<td></td>
+<td>4</td>
+<td>com.poly.service.testng_selenium.HistoryTest@5c7933ad</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.LoginTest.processLogin()'><b>processLogin</b><br>Test class: com.poly.service.testng_selenium.LoginTest<br>Parameters: Đăng nhập với username đúng và password sai, MinhNH, 654321, http://localhost:8080/online-entertaiment-java-ee/login</td>
+<td></td>
+<td>2</td>
+<td>com.poly.service.testng_selenium.LoginTest@194fad1</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.HistoryTest.insertHistory()'><b>insertHistory</b><br>Test class: com.poly.service.testng_selenium.HistoryTest<br>Parameters: Thêm video vào lịch sử xem, Hi9eQnS7snc, Thêm lịch sử xem thành công</td>
+<td></td>
+<td>4</td>
+<td>com.poly.service.testng_selenium.HistoryTest@5c7933ad</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.FavoriteTest.insertFavorite()'><b>insertFavorite</b><br>Test class: com.poly.service.testng_selenium.FavoriteTest<br>Parameters: Thêm video yêu thích, IChYNrudCWk, Thêm video yêu thích thành công</td>
+<td></td>
+<td>6</td>
+<td>com.poly.service.testng_selenium.FavoriteTest@5b7a7f33</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.VideoTest.insertVideo()'><b>insertVideo</b><br>Test class: com.poly.service.testng_selenium.VideoTest<br>Parameters: Thêm video với dữ liệu trống, , 5qap5aO4i9A, , Thêm mới thất bại!</td>
+<td></td>
+<td>2</td>
+<td>com.poly.service.testng_selenium.VideoTest@790da477</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.RegisterTest.processRegister()'><b>processRegister</b><br>Test class: com.poly.service.testng_selenium.RegisterTest<br>Parameters: Đăng ký tài khoản với username đã tồn tại, MinhNH, 123456, 123456, Nguyễn Hoài Minh, hoaiminh@gmail.com, http://localhost:8080/online-entertaiment-java-ee/register</td>
+<td></td>
+<td>3</td>
+<td>com.poly.service.testng_selenium.RegisterTest@72c8e7b</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.LoginTest.processLogin()'><b>processLogin</b><br>Test class: com.poly.service.testng_selenium.LoginTest<br>Parameters: Đăng nhập với username sai và password đúng, NoUser, 123456, http://localhost:8080/online-entertaiment-java-ee/login</td>
+<td></td>
+<td>2</td>
+<td>com.poly.service.testng_selenium.LoginTest@194fad1</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.VideoTest.processLogin()'><b>processLogin</b><br>Test class: com.poly.service.testng_selenium.VideoTest</td>
+<td></td>
+<td>2</td>
+<td>com.poly.service.testng_selenium.VideoTest@790da477</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.UserTest.deleteUser()'><b>deleteUser</b><br>Test class: com.poly.service.testng_selenium.UserTest<br>Parameters: Xoá user với UserID không tồn tồn tại, NoUser, User không tồn tại!</td>
+<td></td>
+<td>0</td>
+<td>com.poly.service.testng_selenium.UserTest@38467116</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.VideoTest.updateVideo()'><b>updateVideo</b><br>Test class: com.poly.service.testng_selenium.VideoTest<br>Parameters: Sửa video với dữ liệu hợp lệ, Cu Thóc Đi Tán Gái, Zc1XepIV4-U, Phim Hài Hay Nhất | Cu Thóc, Cường Cá., Cập nhật thông tin thành công!</td>
+<td></td>
+<td>4</td>
+<td>com.poly.service.testng_selenium.VideoTest@790da477</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.HistoryTest.insertHistory()'><b>insertHistory</b><br>Test class: com.poly.service.testng_selenium.HistoryTest<br>Parameters: Thêm video vào lịch sử xem, Zc1XepIV4-U, Thêm lịch sử xem thành công</td>
+<td></td>
+<td>4</td>
+<td>com.poly.service.testng_selenium.HistoryTest@5c7933ad</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.VideoTest.insertVideo()'><b>insertVideo</b><br>Test class: com.poly.service.testng_selenium.VideoTest<br>Parameters: Thêm video với dữ liệu hợp lệ, Các kỹ thuật thiết kế Test Case, tr8hm-xS33M, Các kỹ thuật thiết kế Test Case, Thêm mới thành công!</td>
+<td></td>
+<td>3</td>
+<td>com.poly.service.testng_selenium.VideoTest@790da477</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.HistoryTest.deleteHistoty()'><b>deleteHistoty</b><br>Test class: com.poly.service.testng_selenium.HistoryTest<br>Parameters: Xoá video khỏi lịch sử xem, AEjv3tFncGQ, Xoá lịch sử xem thành công</td>
+<td></td>
+<td>1</td>
+<td>com.poly.service.testng_selenium.HistoryTest@5c7933ad</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.RegisterTest.processRegister()'><b>processRegister</b><br>Test class: com.poly.service.testng_selenium.RegisterTest<br>Parameters: Đăng ký tài khoản chưa tồn tại, Hai2001, 123456, 123456, Phạm Văn Hải, haipvps14680@fpt.edu.vn, http://localhost:8080/online-entertaiment-java-ee/index</td>
+<td></td>
+<td>3</td>
+<td>com.poly.service.testng_selenium.RegisterTest@72c8e7b</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.FavoriteTest.insertFavorite()'><b>insertFavorite</b><br>Test class: com.poly.service.testng_selenium.FavoriteTest<br>Parameters: Thêm video yêu thích, Hi9eQnS7snc, Thêm video yêu thích thành công</td>
+<td></td>
+<td>8</td>
+<td>com.poly.service.testng_selenium.FavoriteTest@5b7a7f33</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.FavoriteTest.insertFavorite()'><b>insertFavorite</b><br>Test class: com.poly.service.testng_selenium.FavoriteTest<br>Parameters: Thêm video yêu thích, AEjv3tFncGQ, Thêm video yêu thích thành công</td>
+<td></td>
+<td>6</td>
+<td>com.poly.service.testng_selenium.FavoriteTest@5b7a7f33</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.LoginTest.processLogin()'><b>processLogin</b><br>Test class: com.poly.service.testng_selenium.LoginTest<br>Parameters: Đăng nhập với username sai và password sai, NoUser, 654321, http://localhost:8080/online-entertaiment-java-ee/login</td>
+<td></td>
+<td>2</td>
+<td>com.poly.service.testng_selenium.LoginTest@194fad1</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.UserTest.insertUser()'><b>insertUser</b><br>Test class: com.poly.service.testng_selenium.UserTest<br>Parameters: Thêm admin, ChungKP, 123456, Kim Phan Chung, chungkp@gmail.com, admin, Thêm mới thành công!</td>
+<td></td>
+<td>3</td>
+<td>com.poly.service.testng_selenium.UserTest@38467116</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.UserTest.updateUser()'><b>updateUser</b><br>Test class: com.poly.service.testng_selenium.UserTest<br>Parameters: Sửa thông tin user với email đã tồn tại, TeoNV, 123456, Nguyễn Văn Tèo, nopt@gmail.com, user, Cập nhật thông tin thất bại!</td>
+<td></td>
+<td>3</td>
+<td>com.poly.service.testng_selenium.UserTest@38467116</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.ChangePassTest.changePassword()'><b>changePassword</b><br>Test class: com.poly.service.testng_selenium.ChangePassTest<br>Parameters: Đổi mật khẩu với dữ liệu hợp lệ, MinhNH, 123456, abcdef, Đổi mật khẩu thành công!</td>
+<td></td>
+<td>15</td>
+<td>com.poly.service.testng_selenium.ChangePassTest@26abb146</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.RegisterTest.processRegister()'><b>processRegister</b><br>Test class: com.poly.service.testng_selenium.RegisterTest<br>Parameters: Đăng ký tài khoản với email đã tồn tại, KhoaDH, 123456, 123456, Đặng Hữu Đăng Khoa, khoadhd@gmail.com, http://localhost:8080/online-entertaiment-java-ee/register</td>
+<td></td>
+<td>3</td>
+<td>com.poly.service.testng_selenium.RegisterTest@72c8e7b</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.UserTest.processLogin()'><b>processLogin</b><br>Test class: com.poly.service.testng_selenium.UserTest</td>
+<td></td>
+<td>2</td>
+<td>com.poly.service.testng_selenium.UserTest@38467116</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.FavoriteTest.processLogin()'><b>processLogin</b><br>Test class: com.poly.service.testng_selenium.FavoriteTest</td>
+<td></td>
+<td>2</td>
+<td>com.poly.service.testng_selenium.FavoriteTest@5b7a7f33</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.UserTest.updateUser()'><b>updateUser</b><br>Test class: com.poly.service.testng_selenium.UserTest<br>Parameters: Sửa thông tin user, KhoaDHD, 654321, Đặng Hữu Đăng Khoa, khoadhd@yahoo.com, admin, Cập nhật thông tin thành công!</td>
+<td></td>
+<td>3</td>
+<td>com.poly.service.testng_selenium.UserTest@38467116</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.UserTest.insertUser()'><b>insertUser</b><br>Test class: com.poly.service.testng_selenium.UserTest<br>Parameters: Thêm user với dữ liệu trống, , , , , user, Thêm mới thất bại!</td>
+<td></td>
+<td>2</td>
+<td>com.poly.service.testng_selenium.UserTest@38467116</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.VideoTest.deleteVideo()'><b>deleteVideo</b><br>Test class: com.poly.service.testng_selenium.VideoTest<br>Parameters: Xoá video với video ID không tồn tại, AbcAd-123jd, Video không tồn tại!</td>
+<td></td>
+<td>0</td>
+<td>com.poly.service.testng_selenium.VideoTest@790da477</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.LoginTest.processLogin()'><b>processLogin</b><br>Test class: com.poly.service.testng_selenium.LoginTest<br>Parameters: Đăng nhập với username đúng và password đúng, MinhNH, 123456, http://localhost:8080/online-entertaiment-java-ee/index</td>
+<td></td>
+<td>3</td>
+<td>com.poly.service.testng_selenium.LoginTest@194fad1</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.UserTest.deleteUser()'><b>deleteUser</b><br>Test class: com.poly.service.testng_selenium.UserTest<br>Parameters: Xoá user với UserID tồn tại, KhoaDHD, Xoá thành công!</td>
+<td></td>
+<td>2</td>
+<td>com.poly.service.testng_selenium.UserTest@38467116</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.FavoriteTest.deleteFavorite()'><b>deleteFavorite</b><br>Test class: com.poly.service.testng_selenium.FavoriteTest<br>Parameters: Xoá video yêu thích, Hi9eQnS7snc, Xoá video yêu thích thành công</td>
+<td></td>
+<td>1</td>
+<td>com.poly.service.testng_selenium.FavoriteTest@5b7a7f33</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.VideoTest.deleteVideo()'><b>deleteVideo</b><br>Test class: com.poly.service.testng_selenium.VideoTest<br>Parameters: Xoá video với video ID hợp lệ, IChYNrudCWk, Xoá thành công!</td>
+<td></td>
+<td>3</td>
+<td>com.poly.service.testng_selenium.VideoTest@790da477</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.ChangePassTest.changePassword()'><b>changePassword</b><br>Test class: com.poly.service.testng_selenium.ChangePassTest<br>Parameters: Đổi mật khẩu với dữ liệu hợp lệ, MinhNH, abcdef, 123456, Đổi mật khẩu thành công!</td>
+<td></td>
+<td>14</td>
+<td>com.poly.service.testng_selenium.ChangePassTest@26abb146</td></tr>
+<tr>
+<td title='com.poly.service.testng_selenium.ChangePassTest.changePassword()'><b>changePassword</b><br>Test class: com.poly.service.testng_selenium.ChangePassTest<br>Parameters: Đổi mật khẩu với mật khẩu sai, MinhNH, 000000, 654321, Mật khẩu không đúng!</td>
+<td></td>
+<td>3</td>
+<td>com.poly.service.testng_selenium.ChangePassTest@26abb146</td></tr>
+</table><p>
+</body>
+</html>

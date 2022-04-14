@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-12-13T08:26:45 ICT" name="Suite" finished-at="2021-12-13T08:27:14 ICT" duration-ms="29148">
+    <groups>
+    </groups>
+    <test started-at="2021-12-13T08:26:45 ICT" name="HistoryTest" finished-at="2021-12-13T08:27:14 ICT" duration-ms="29148">
+      <class name="com.poly.service.testng_selenium.HistoryTest">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.poly.service.testng_selenium.HistoryTest@470734c3]" started-at="2021-12-13T08:26:45 ICT" name="init" finished-at="2021-12-13T08:26:50 ICT" duration-ms="4937" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.poly.service.testng_selenium.HistoryTest@470734c3]" started-at="2021-12-13T08:26:50 ICT" name="setUp" finished-at="2021-12-13T08:26:50 ICT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.poly.service.testng_selenium.HistoryTest.processLogin() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="processLogin()[pri:1, instance:com.poly.service.testng_selenium.HistoryTest@470734c3]" started-at="2021-12-13T08:26:50 ICT" name="processLogin" finished-at="2021-12-13T08:26:53 ICT" duration-ms="2574" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- processLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.poly.service.testng_selenium.HistoryTest@470734c3]" started-at="2021-12-13T08:26:53 ICT" name="tearDown" finished-at="2021-12-13T08:26:53 ICT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=processLogin status=SUCCESS method=HistoryTest.processLogin()[pri:1, instance:com.poly.service.testng_selenium.HistoryTest@470734c3] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.poly.service.testng_selenium.HistoryTest.processLogin() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.poly.service.testng_selenium.HistoryTest@470734c3]" started-at="2021-12-13T08:26:55 ICT" name="setUp" finished-at="2021-12-13T08:26:55 ICT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.poly.service.testng_selenium.HistoryTest.insertHistory(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="insertHistory(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.poly.service.testng_selenium.HistoryTest@470734c3]" started-at="2021-12-13T08:26:55 ICT" name="insertHistory" data-provider="insertDP" finished-at="2021-12-13T08:27:00 ICT" depends-on-methods="com.poly.service.testng_selenium.HistoryTest.processLogin" duration-ms="5426" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Thêm video vào lịch sử xem]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hi9eQnS7snc]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Thêm lịch sử xem thành công]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertHistory -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.poly.service.testng_selenium.HistoryTest@470734c3]" started-at="2021-12-13T08:27:00 ICT" name="tearDown" finished-at="2021-12-13T08:27:00 ICT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=insertHistory status=SUCCESS method=HistoryTest.insertHistory(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.poly.service.testng_selenium.HistoryTest@470734c3] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.poly.service.testng_selenium.HistoryTest.insertHistory(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="insertHistory(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.poly.service.testng_selenium.HistoryTest@470734c3]" started-at="2021-12-13T08:27:00 ICT" name="insertHistory" data-provider="insertDP" finished-at="2021-12-13T08:27:05 ICT" depends-on-methods="com.poly.service.testng_selenium.HistoryTest.processLogin" duration-ms="4903" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Thêm video vào lịch sử xem]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Zc1XepIV4-U]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Thêm lịch sử xem thành công]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertHistory -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.poly.service.testng_selenium.HistoryTest@470734c3]" started-at="2021-12-13T08:27:00 ICT" name="setUp" finished-at="2021-12-13T08:27:00 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.poly.service.testng_selenium.HistoryTest.insertHistory(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.poly.service.testng_selenium.HistoryTest@470734c3]" started-at="2021-12-13T08:27:05 ICT" name="tearDown" finished-at="2021-12-13T08:27:05 ICT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=insertHistory status=SUCCESS method=HistoryTest.insertHistory(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.poly.service.testng_selenium.HistoryTest@470734c3] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.poly.service.testng_selenium.HistoryTest.insertHistory(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.poly.service.testng_selenium.HistoryTest@470734c3]" started-at="2021-12-13T08:27:05 ICT" name="setUp" finished-at="2021-12-13T08:27:05 ICT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.poly.service.testng_selenium.HistoryTest.insertHistory(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="insertHistory(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.poly.service.testng_selenium.HistoryTest@470734c3]" started-at="2021-12-13T08:27:05 ICT" name="insertHistory" data-provider="insertDP" finished-at="2021-12-13T08:27:09 ICT" depends-on-methods="com.poly.service.testng_selenium.HistoryTest.processLogin" duration-ms="4558" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Thêm video vào lịch sử xem]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[AEjv3tFncGQ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Thêm lịch sử xem thành công]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertHistory -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.poly.service.testng_selenium.HistoryTest@470734c3]" started-at="2021-12-13T08:27:09 ICT" name="tearDown" finished-at="2021-12-13T08:27:09 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=insertHistory status=SUCCESS method=HistoryTest.insertHistory(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.poly.service.testng_selenium.HistoryTest@470734c3] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.poly.service.testng_selenium.HistoryTest.insertHistory(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.poly.service.testng_selenium.HistoryTest@470734c3]" started-at="2021-12-13T08:27:09 ICT" name="setUp" finished-at="2021-12-13T08:27:09 ICT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.poly.service.testng_selenium.HistoryTest.deleteHistoty(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="deleteHistoty(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:com.poly.service.testng_selenium.HistoryTest@470734c3]" started-at="2021-12-13T08:27:09 ICT" name="deleteHistoty" data-provider="deleteDP" finished-at="2021-12-13T08:27:11 ICT" depends-on-methods="com.poly.service.testng_selenium.HistoryTest.processLogin" duration-ms="1380" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Xoá video khỏi lịch sử xem]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hi9eQnS7snc]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Xoá lịch sử xem thành công]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteHistoty -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.poly.service.testng_selenium.HistoryTest@470734c3]" started-at="2021-12-13T08:27:11 ICT" name="setUp" finished-at="2021-12-13T08:27:11 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.poly.service.testng_selenium.HistoryTest.deleteHistoty(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.poly.service.testng_selenium.HistoryTest@470734c3]" started-at="2021-12-13T08:27:11 ICT" name="tearDown" finished-at="2021-12-13T08:27:11 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteHistoty status=SUCCESS method=HistoryTest.deleteHistoty(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:com.poly.service.testng_selenium.HistoryTest@470734c3] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.poly.service.testng_selenium.HistoryTest.deleteHistoty(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="deleteHistoty(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:com.poly.service.testng_selenium.HistoryTest@470734c3]" started-at="2021-12-13T08:27:11 ICT" name="deleteHistoty" data-provider="deleteDP" finished-at="2021-12-13T08:27:12 ICT" depends-on-methods="com.poly.service.testng_selenium.HistoryTest.processLogin" duration-ms="1290" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Xoá video khỏi lịch sử xem]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Zc1XepIV4-U]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Xoá lịch sử xem thành công]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteHistoty -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.poly.service.testng_selenium.HistoryTest@470734c3]" started-at="2021-12-13T08:27:12 ICT" name="tearDown" finished-at="2021-12-13T08:27:12 ICT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteHistoty status=SUCCESS method=HistoryTest.deleteHistoty(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:com.poly.service.testng_selenium.HistoryTest@470734c3] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.poly.service.testng_selenium.HistoryTest.deleteHistoty(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.poly.service.testng_selenium.HistoryTest@470734c3]" started-at="2021-12-13T08:27:12 ICT" name="setUp" finished-at="2021-12-13T08:27:12 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.poly.service.testng_selenium.HistoryTest.deleteHistoty(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="deleteHistoty(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:com.poly.service.testng_selenium.HistoryTest@470734c3]" started-at="2021-12-13T08:27:12 ICT" name="deleteHistoty" data-provider="deleteDP" finished-at="2021-12-13T08:27:13 ICT" depends-on-methods="com.poly.service.testng_selenium.HistoryTest.processLogin" duration-ms="1225" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Xoá video khỏi lịch sử xem]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[AEjv3tFncGQ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Xoá lịch sử xem thành công]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteHistoty -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.poly.service.testng_selenium.HistoryTest@470734c3]" started-at="2021-12-13T08:27:13 ICT" name="tearDown" finished-at="2021-12-13T08:27:13 ICT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteHistoty status=SUCCESS method=HistoryTest.deleteHistoty(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:com.poly.service.testng_selenium.HistoryTest@470734c3] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.poly.service.testng_selenium.HistoryTest.deleteHistoty(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="destroy()[pri:0, instance:com.poly.service.testng_selenium.HistoryTest@470734c3]" started-at="2021-12-13T08:27:13 ICT" name="destroy" finished-at="2021-12-13T08:27:14 ICT" duration-ms="1096" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroy -->
+      </class> <!-- com.poly.service.testng_selenium.HistoryTest -->
+    </test> <!-- HistoryTest -->
+  </suite> <!-- Suite -->
+</testng-results>
